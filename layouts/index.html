@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  {{ partial "head.html"  .}} 
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <h4 class="display-4 text-center">{{ .Site.Title }}</h4>
+          <p class="lead text-center">{{ .Site.Params.Description }}</p>
+        </div>
+      </div>      
+      
+      <div class="row">
+        {{ range $.Site.Data.items.items }}
+        <div class="col">
+          <div class="card border-{{.color}} mb-3" style="width: 18rem;height: 10rem" tabindex="-1" data-html="true" data-toggle="popover" data-trigger="focus"  data-placement="bottom" title="{{.title}}" data-content="{{.description}}">
+            <div class="card-header text-{{.color}}">{{.title}}</div>
+            <div class="card-body text-{{.color}}">
+             <h5 class="card-title">
+               {{ range .badges }}
+                <i class="fas {{.}}"></i> 
+               {{ end }}
+             </h5>
+             <p class="card-text">{{.shortdescription}}</p>
+            </div>
+          </div>
+        </div>
+        {{ end }}
+
+      </div>      
+    </div>
+    {{ partial "footer.html" }}
+  </body>
+
+</html>
