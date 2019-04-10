@@ -13,9 +13,9 @@
       <div class="row">
         {{ range $.Site.Data.items.items }}
         <div class="col">
-          <div class="card border-{{.color}} mb-3" style="width: 18rem;height: 10rem" tabindex="-1" data-html="true" data-toggle="popover" data-trigger="focus"  data-placement="bottom" title="{{.title}}" data-content="{{.description}}">
-            <div class="card-header text-{{.color}}">{{.title}}</div>
-            <div class="card-body text-{{.color}}">
+          <div class="card text-white bg-{{.color}} mb-3" style="width: 18rem;height: 10rem" tabindex="-1" data-html="true" data-toggle="popover" data-trigger="focus"  data-placement="bottom" title="{{.title}}" data-content="{{.description}}">
+            <div class="card-header">{{.title}}</div>
+            <div class="card-body">
              <h5 class="card-title">
                {{ range .badges }}
                 <i class="fas {{.}}"></i> 
