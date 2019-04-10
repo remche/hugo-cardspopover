@@ -3,9 +3,9 @@
 
 name = "Cardspopover"
 license = "MIT"
-licenselink = "https://github.com/yourname/yourtheme/blob/master/LICENSE"
+licenselink = "https://github.com/remche/hugo-cardspopover/blob/master/LICENSE"
 description = ""
-homepage = "http://example.com/"
+homepage = "https://github.com/remche/hugo-cardspopover"
 tags = []
 features = []
 min_version = "0.41"
