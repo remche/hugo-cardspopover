@@ -11,7 +11,7 @@
       </div>      
       
       <div class="row">
-        {{ range $.Site.Data.items.items }}
+        {{ range (shuffle .Site.Data.items.items) }}
         <div class="col">
           <div class="card text-white bg-{{.color}} mb-3" style="width: 18rem;height: 10rem" tabindex="-1" data-html="true" data-toggle="popover" data-trigger="focus"  data-placement="bottom" title="{{.title}}" data-content="{{.description}}">
             <div class="card-header">{{.title}}</div>
