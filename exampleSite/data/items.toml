@@ -1,0 +1,27 @@
+[[items]]
+title = "How to"
+shortdescription = "This is an example"
+description = """
+<p>Edit data/items.toml></p>
+"""
+color = "success"
+badges = ["fa-file-alt", "fa-shield-alt"]
+
+[[items]]
+title = "Badges"
+shortdescription = "This is an example"
+description = """
+<p>You can use font-awesome for badges</p>
+"""
+color = "warning"
+badges = ["fa-cogs", "fa-shield-alt"]
+
+[[items]]
+title = "Formatting"
+shortdescription = "This is an example"
+description = """
+<p>Use html code for formatting</p>
+"""
+color = "danger"
+badges = ["fa-cogs", "fa-shield-alt"]
+

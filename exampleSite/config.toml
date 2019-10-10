@@ -1,0 +1,9 @@
+baseURL = "http://example.org/"
+languageCode = "en-us"
+title = "Cards Popover Theme"
+theme = "cardspopover"
+
+[params]
+    author = "Rémi Cailletaud"
+    description = "Astuces et bonne pratiques pour vos Dockerfiles..."
+    email = "remche@remche.org"
